@@ -1,0 +1,42 @@
+.cardBodyConciertos {
+	color: var(--white);
+}
+
+.mapLink {
+	color: var(--white);
+}
+
+.cardBodyConciertos h2 {
+	text-align: center;
+}
+
+.ItemsConciertos .Notification {
+	/* padding-top: 15%;
+  padding-bottom: 15%; */
+}
+
+.mapLink {
+	text-align: center;
+}
+
+.day {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.month {
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+.titleLine {
+	border-color: var(--white);
+	opacity: 0.5;
+}
+
+@media (max-width: 992px) {
+	.notification {
+		width: 100%;
+	}
+}

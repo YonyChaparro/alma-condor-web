@@ -1,0 +1,62 @@
+.section-fullscreen {
+	min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+	display: flex;
+	align-items: center;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Media query para pantallas con menor altura */
+@media (max-height: 800px) {
+	.section-fullscreen {
+	}
+}
+
+/* carousel-item clase de boostrap */
+.carousel-item img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* MEDIA QUERIES */
+
+.gallery {
+	display: none;
+}
+@media (min-width: 1400px) {
+	.carrousel {
+		display: none;
+	}
+
+	.gallery {
+		display: block;
+	}
+}
+.player {
+	display: none;
+}
+@media (min-width: 768px) {
+	.playermini {
+		display: none !important;
+	}
+
+	.player {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+	}
+}
+/* ANIMACIONES */
+.hover-image {
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+.hover-image:hover {
+	transform: scale(1.5);
+}

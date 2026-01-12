@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import letraLogo from '../assets/Logos/Letra alma condor en transparente.png'
 
-function Navbar({ links, brand }) {
+function Navbar({ links }) {
   const [open, setOpen] = useState(false)
   const toggle = () => setOpen((prev) => !prev)
   const close = () => setOpen(false)
@@ -8,7 +9,13 @@ function Navbar({ links, brand }) {
   return (
     <header className="sticky top-0 z-10 bg-white/85 shadow-sm backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <div className="text-lg font-semibold tracking-wide">{brand}</div>
+        <a href="#home" className="flex items-center gap-3">
+          <img
+            src={letraLogo}
+            alt="Alma Cóndor"
+            className="hidden sm:inline h-12 w-auto"
+          />
+        </a>
         <div className="flex items-center gap-4">
           <button
             className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-900 shadow-sm transition hover:border-slate-300 md:hidden"

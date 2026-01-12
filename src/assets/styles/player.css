@@ -1,0 +1,84 @@
+.icon button {
+	font-size: 2rem;
+}
+
+.playermini{
+	display: block;
+}
+.icon-player i {
+	font-size: 3rem;
+}
+.icon {
+	font-size: 1.5rem;
+}
+
+.controls i {
+	color: var(--secondary);
+}
+.controls i:hover {
+	color: var(--primary);
+}
+.progress {
+	background-color: var(--primary);
+}
+.progress-bar {
+	background-color: var(--secondary);
+}
+.list-player button {
+	background: transparent;
+	background-color: transparent;
+	border: none;
+	color: var(--dark);
+}
+.list-player i {
+	color: var(--secondary);
+}
+.list-player button:hover {
+	color: var(--primary);
+	background-color: transparent;
+}
+.list-player button:hover i {
+	color: var(--primary);
+	background-color: transparent;
+}
+
+.counters span {
+	color: var(--dark);
+	font-size: 1rem;
+}
+.square {
+	aspect-ratio: 1/1;
+}
+.square-img {
+	object-fit: fill;
+	height: 100%;
+	width: 100%;
+}
+.imgPlayer img {
+	border-radius: 0.5em;
+}
+
+/* Para pantallas aún más pequeñas */
+@media (max-height: 600px) {
+	.section-fullscreen {
+		/* padding: 3rem; */
+		text-align: center;
+	}
+	.section-fullscreen {
+		padding: 0;
+		margin: 0;
+		padding-top: 50px;
+	}
+	.section-fullscreen img {
+		max-height: 500px;
+		max-width: 500px;
+		text-align: center;
+		max-width: auto;
+	}
+	.player {
+		padding: 0 1rem; 
+	}
+	.square {
+		aspect-ratio: 1/0.5;
+	}
+}
