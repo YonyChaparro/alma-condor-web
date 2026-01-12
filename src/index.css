@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
 
 :root {
+  /* Paleta Alma Cóndor */
+  --crema-palido: #FCEFE3;
+  --purpura-profundo: #2E1035;
+  --azul-andino: #152238;
+  --turquesa-montana: #4FA3A5;
+  --dorado-solar: #F4CE5E;
+  --terracota: #E87E3A;
+
   font-family: "Rubik", "Segoe UI", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #0f172a;
-  background-color: #ffffff;
+  color: var(--purpura-profundo);
+  background-color: var(--crema-palido);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,12 +33,17 @@ body {
   background-size: 100% auto;
   background-position: top center;
   background-attachment: scroll;
-  color: #0f172a;
+  background-color: var(--crema-palido);
+  color: var(--purpura-profundo);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--terracota);
 }
 
 button {
